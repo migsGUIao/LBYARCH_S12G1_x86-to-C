@@ -3,7 +3,7 @@
 - GUIAO, Miguel Stephen G.
 - ARTECHE, Pryne Melton
 ***
-### Machine Project 2 Specifications
+## Machine Project 2 Specifications
 The kernel is to perform a dot product between vector A and vector B and place the result in **sdot**. This is expected to be written in C and x86-64 assembly language.
 ![mco2_specs](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/c7cbe675-32cd-48d6-b6bc-1c30b9ee7129)
 
