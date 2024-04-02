@@ -5,7 +5,7 @@
 ***
 ## I. Comparative execution time and short analysis
 For both debug and release mode, we did 30 runs for each vector size (both C and Assembly) then averaged these runtimes.
-&nbsp
+
 ### Debug mode results
 
 | Vector size   | C Avg Runtime | Assembly Avg Runtime  |
@@ -16,7 +16,7 @@ For both debug and release mode, we did 30 runs for each vector size (both C and
 
 ### Analysis for debug mode:
 For debug mode, the runtime values shown in the table above gets slower as the vector size gets larger regardless of the programming language which is expected. For the vector size 2^20, 2^24, and 2^30, the average runtime of assembly consistently executes faster than C which is impressive since Assembly language has a simple design wherein it’s directly assembled into CPU instructions. It's also worth mentioning that as the vector size gets larger, the average runtime of C gets significantly slower when compared to Assembly.
-&nbsp
+
 ### Release mode results
 
 | Vector size   | C Avg Runtime | Assembly Avg Runtime  |
@@ -32,38 +32,29 @@ As we can observe the runtimes in the table above, release mode is generally fas
 
 ## II. Program output with correctness check (C and Assembly)
 Our sanity check answer key is based from the C program. The result (sdot) of C is compared to Assembly, "The results match!! The x86-64 Kernel output is correct!" is displayed if results match. Else, the program will display "Warning! The x86-64 Kernel output is not correct."
-&nbsp
+
 ### Example when results don't match
 ![incorrect](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/21fbaa7f-2876-4a13-9048-4103d95d2fde)
-&nbsp
-### n = 2^20 
+
+### Vector size = 2^20 
 Debug mode:
-&nbsp
 ![2^20_debug](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/7f6bbd52-8ba6-4592-b3e6-385b4ea526b5)
 &nbsp
 
 Release mode:
-&nbsp
 ![2^20_release](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/fae1e3a4-50a7-4ae4-8b93-6ef3ca969d5c)
 &nbsp
-### n = 2^24 
+### Vector size = 2^24 
 Debug mode:
-&nbsp
 ![2^24_debug](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/1c52b4e2-a793-4be1-9679-cc3648935c66)
-&nbsp
 
 Release mode:
-&nbsp
 ![2^24_release](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/a7cbef77-6664-4a6e-973a-f6d3509180a4)
-&nbsp
-### n = 2^30 
+
+### Vector size = 2^30 
 Debug mode:
-&nbsp
 ![2^30_debug](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/0e4047da-c40f-43e6-9362-01badd46136c)
-&nbsp
 
 Release mode:
-&nbsp
 ![2^30_release](https://github.com/migsGUIao/LBYARCH_S12G1_x86-to-C/assets/118590095/8e93b43d-8c6e-4b20-9334-51a9f57c2983)
-&nbsp
 
